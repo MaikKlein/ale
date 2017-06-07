@@ -19,7 +19,7 @@ function! ale_linters#rust#cargoworkspace#GetCommand(buffer) abort
 endfunction
 
 call ale#linter#Define('rust', {
-\   'name': 'cargo-workspace',
+\   'name': 'cargoworkspace',
 \   'executable_callback': 'ale_linters#rust#cargoworkspace#GetCargoExecutable',
 \   'command_callback': 'ale_linters#rust#cargoworkspace#GetCommand',
 \   'callback': 'ale#handlers#rust#HandleRustErrors',
