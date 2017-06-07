@@ -15,7 +15,7 @@ function! ale_linters#rust#cargoworkspace#GetCommand(buffer) abort
     \   ? 'check'
     \   : 'build'
 
-    return 'cargo-workspace ' . l:command . ' --frozen --message-format=json -q'
+    return 'cargo-workspace ' . l:command . ' --message-format=json -q'
 endfunction
 
 call ale#linter#Define('rust', {
